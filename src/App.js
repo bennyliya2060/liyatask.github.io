@@ -1,8 +1,6 @@
 import logo from './logo.svg';
 import './App.css';
 import Index from './Index.tsx';
-import Calender from './Calender.tsx';
-import Form from './Form.tsx';
 import Display from './Display.tsx';
 import {
   BrowserRouter as Router,
@@ -13,9 +11,8 @@ import {
 function App() {
   return (
     <div className="App">
-     <Index/>
-     <Form/>
-     <Calender/>
+      <Index />
+      <Display />
     </div>
   );
 }

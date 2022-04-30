@@ -1,15 +1,20 @@
 import React from 'react'
 import './index.css';
+import IUser from './type';
 import { useNavigate } from "react-router-dom";
+import { Routes, Route, useParams, Link } from "react-router-dom";
 
-// const Calender: React.FC<IUser> = (props: any) => {
-    const Calender = () => {
+const Calender: React.FC<IUser> = (props: any) => {
+    // const Calender = () => {
     // const navigate = useNavigate();
 
     // const Table = () => {
     //     navigate("/")
     // }
+
+    
     return (
+        //calender component
         <div className="table">
             <table>
                 <h6 id="heading">January</h6>
@@ -23,7 +28,7 @@ import { useNavigate } from "react-router-dom";
                     <th>Sat</th>
                 </tr>
                 <tr>
-                    {/* <td>{props.datas.name}</td> */}
+                    <td>{props.datas.name[0]}</td>
                     <td></td>
                     <td></td>
                     <td></td>
@@ -70,9 +75,6 @@ import { useNavigate } from "react-router-dom";
 
 export default Calender
 
-interface IUser {
-    datas: {
-        name: string;
-        birthday: string;
-    }
-}
+// interface IProps{
+//     datas: IUser[]
+//     }

@@ -1,4 +1,4 @@
-export default  interface IUser{
-    name?:string;
-    birthday?:string;
+export default interface IUser {
+    name?: string;
+    birthday?: string;
 }
